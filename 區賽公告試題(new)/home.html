@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>由 2023 紐約國際當代家具家飾展（NYICFF）</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img width="180px"
+                    src="https://i0.wp.com/ofdl.tw/wp-content/uploads/2019/04/ofdl_home_logo-1.png?fit=300%2C110&ssl=1"
+                    alt="logo" />
+            </a>
+        </div>
+        <div class="list-item">
+            <div class="navbar-item"><a href="home.html">Home</a></div>
+            <div class="navbar-item"><a href="news.html">News</a></div>
+            <div class="navbar-item"><a href="discover.html">Discover</a></div>
+            <div class="navbar-item"><a href="tickets.html">Tickets</a></div>
+        </div>
+    </div>
+
+    <div class="web_carousel">
+        <div class="slide-container">
+            <div class="slide-content" style="display: block">
+                <img class="slide" src="https://dev.ofdl.tw/timeline/photos/2023/2023WRO_NA_T2.png" alt="img1" />
+                <div class="slide-content-text">
+                    <strong class="slide-title">2023WRO 全國賽</strong>
+                    <p class="slide-detail">網球雙打組 OFDL LKY 榮獲 第二名</p>
+                </div>
+            </div>
+            <div class="slide-content" style="display: none">
+                <img class="slide" src="https://dev.ofdl.tw/timeline/photos/2023/2023WRO_NA_T1.png" src="img2" />
+                <div class="slide-content-text">
+                    <strong class="slide-title">2023WRO 全國賽</strong>
+                    <p class="slide-detail">網球雙打組 OFDL RTB 榮獲 第一名</p>
+                </div>
+            </div>
+            <div class="slide-content" style="display: none">
+                <img class="slide" src="https://dev.ofdl.tw/timeline/photos/2023/2023WRO_CR_R1.png" alt="img3" />
+                <div class="slide-content-text">
+                    <strong class="slide-title">2023WRO 中南區賽</strong>
+                    <p class="slide-detail">競賽國中組 OFDL Name 榮獲 第一名</p>
+                </div>
+            </div>
+            <div class="slide-content" style="display: none">
+                <img class="slide" src="https://dev.ofdl.tw/timeline/photos/2023/2023WRO_CR_R1.png" alt="img3" />
+                <div class="slide-content-text">
+                    <strong class="slide-title">2023WRO 中南區賽4</strong>
+                    <p class="slide-detail">競賽國中組 OFDL Name 榮獲 第4一名</p>
+                </div>
+            </div>
+            <p class="web_carousel_button" style="left:0;" onclick="showDivs(-1)">⬅️</p>
+            <p class="web_carousel_button" style="right:0;" onclick="showDivs(1)">➡️</p>
+        </div>
+    </div>
+
+    <div class="infomation">
+        <h1>活動資訊</h1>
+        <pre>日期：2024/01/30
+地點：Panama Maracana Stadium & Panama Convention Center
+活動亮點：
+巴拿馬咖啡博覽會： Panama Maracana Stadium充滿咖啡香氣，匯聚來自巴拿馬及世界各地的咖啡製造商和愛好者，品味多元風味。
+咖啡藝術展示： Panama Maracana Stadium將展示咖啡藝術創作，色彩繽紛的畫作與咖啡相得益彰。
+國際論壇： Panama Convention Center將舉辦國際論壇，邀請國際知名咖啡專家分享最新咖啡趨勢和技術。
+烘焙示範： 會場內將有烘焙大師進行實時示範，揭示咖啡背後的烘焙藝術。
+美食市集： Panama Maracana Stadium和Panama Convention Center皆有美食市集，由當地和國際廚師精心製作，搭配精選咖啡。
+購票信息：
+早鳥票現已開售，請至官方網站購票，提前感受咖啡之美！
+PCE期待與您共度這場咖啡文化的盛宴，一同探索咖啡的無窮可能性！</pre>
+    </div>
+
+    <div class="social_media">
+        <h2>社群媒體分享區</h2>
+        <img src="https://t4.ftcdn.net/jpg/03/92/71/99/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg">
+    </div>
+
+    <footer>Copyright © 2023 NYICFF All Rights Reserved</footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName("slide-content");
+
+            x[slideIndex].setAttribute("style", "display:none");
+            slideIndex += n;
+
+            slideIndex = slideIndex >= x.length ? x.length - 1 : slideIndex;
+            slideIndex = slideIndex < 0 ? 0 : slideIndex;
+
+            x[slideIndex].setAttribute("style", "display:block");
+        }
+    </script>
+</body>
+
+</html>

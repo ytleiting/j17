@@ -1,0 +1,59 @@
+.map_and_info {
+    display: flex;
+    flex-direction: row;
+}
+
+#map {
+    position: relative;
+
+    width: 650px;
+    height: 477px;
+    
+    box-sizing: border-box;
+    background: url("./../media/地圖.png");
+    border: solid 2px black;
+}
+
+#map>p {
+    position: absolute;
+    font-size: 20px;
+    text-shadow: 0em 0em 0.3em black;
+    color: white;
+    user-select: none;
+}
+
+#info {
+    width: 650px;
+    height: 477px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-left: none;
+
+    position: relative;
+}
+
+#info>*:not(.display) {
+    display: none;
+}
+
+#info p,
+h1 {
+    color: white;
+    text-shadow: 0em 0em 0.2em black;
+}
+
+#info img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 649px;
+    height: 475px;
+    z-index: -1;
+}

@@ -1,0 +1,36 @@
+#images {
+    position: relative;
+}
+
+#images>p {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-100%);
+    font-size: 40px;
+    user-select: none;
+    z-index: 2;
+}
+
+#images>div>h1,
+#images>div>p {
+    color: white;
+}
+
+.slide-content {
+    position: relative;
+    width: 600px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.slide-content img {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    z-index: -1;
+}

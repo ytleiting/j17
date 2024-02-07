@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>由 2023 紐約國際當代家具家飾展（NYICFF）</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img width="180px"
+                    src="https://i0.wp.com/ofdl.tw/wp-content/uploads/2019/04/ofdl_home_logo-1.png?fit=300%2C110&ssl=1"
+                    alt="logo" />
+            </a>
+        </div>
+        <div class="list-item">
+            <div class="navbar-item"><a href="home.html">Home</a></div>
+            <div class="navbar-item"><a href="news.html">News</a></div>
+            <div class="navbar-item"><a href="discover.html">Discover</a></div>
+            <div class="navbar-item"><a href="tickets.html">Tickets</a></div>
+        </div>
+    </div>
+    <div class="discover-container">
+        <div class="discover-content">
+            <h1>Panama Cafe Exhibition (PCE) - 咖啡之舞的繽紛盛宴
+            </h1>
+            <pre>歡迎來到 Panama Cafe Exhibition (PCE)，這是一場咖啡盛宴，讓您沉浸在咖啡的豐富世界中，探索風味的盛大舞台。
+
+品味源自巴拿馬的珍稀風味
+
+PCE 匯聚了巴拿馬各地最優質的咖啡豆，每一顆都是風土人情的結晶。品味來自高山和熱帶的珍稀風味，每一杯都是一場對咖啡風味的美妙探索。
+
+烘焙藝術展演
+
+在 PCE，烘焙師將展示他們的藝術，演繹咖啡烘焙的奇妙過程。從挑選豆子到烘焙的每一步，都是一場視覺與味覺的盛宴，讓您感受到烘焙的精湛工藝。
+
+國際交流平台
+
+PCE 不僅僅是一場展覽，更是咖啡愛好者、生產商和行業專業人士的交流平台。這裡有國際咖啡界的佼佼者，分享他們的經驗，共同推動咖啡文化的進步。
+
+創意藝術咖啡廳
+
+PCE 設有創意藝術咖啡廳，融合咖啡文化和藝術，讓您在品味咖啡的同時，欣賞到由咖啡啡渍創作的藝術品。這是一場視覺和味覺的雙重享受。
+
+您的咖啡冒險即將啟程，加入我們，共同感受 PCE 咖啡之舞的繽紛盛宴。</pre>
+            <h1>ICFF Roundup</h1>
+            <p>From sculptural faucets to striking vanities, here
+                are four companies making a statement in the
+                washroom.</p>
+            <button id="readmore-button" onclick="readmore_click()">Read more</button>
+            <div id="readmore-content" style="display: none;">
+                <h2>Embley from Australian Designer Faucets</h2>
+                <p>Australian Designer Faucets creates refined
+                    designer bathroom and kitchen collections. The
+                    brand builds on parent company Phoenix's
+                    30-year legacy as one of Australia's best-known
+                    and most-trusted brands in bathroom and kitchen
+                    products.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social_media">
+        <h2>社群媒體分享區</h2>
+        <img src="https://t4.ftcdn.net/jpg/03/92/71/99/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg">
+    </div>
+
+    <footer>Copyright © 2023 NYICFF All Rights Reserved</footer>
+</body>
+<script>
+    var readmore_button = document.getElementById("readmore-button");
+    var readmore_content = document.getElementById("readmore-content");
+
+    var readmoreDisplay = false;
+
+    function readmore_click() {
+        readmoreDisplay = !readmoreDisplay;
+
+        readmore_button.innerText = readmoreDisplay ? "Read less" : "Read more"
+
+        readmore_content.setAttribute("style", readmoreDisplay ? "display:block" : "display:none");
+    }
+</script>
+
+</html>
