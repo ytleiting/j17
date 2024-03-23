@@ -1,0 +1,25 @@
+#images {
+    position: relative;
+    width: 800px;
+    height: 530px;
+}
+
+#images img {
+    width: 800px;
+    height: 530px;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#images img:not(.display) {
+    opacity: 0;
+}
+
+#images p {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-100%);
+    user-select: none;
+    font-size: 30px;
+    text-shadow: 2px 2px 10px black;
+}

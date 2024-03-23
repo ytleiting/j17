@@ -1,0 +1,41 @@
+form {
+    width: 650px;
+    padding: 50px;
+
+    border: solid 2px black;
+    background-color: aquamarine;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px black;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form>* {
+    margin-top: 10px;
+}
+
+form label {
+    color: black;
+    font-size: 40px;
+    width: 200px;
+}
+
+form input {
+    font-size: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+form button {
+    font-size: 30px;
+    width: 600px;
+    height: 60px;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tickets - 2024 法國國際商務展(FIBEX)</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./tickets/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="./LOGO.jpg">
+        <a href="./home.html">Home</a>
+        <a href="./news.html">News</a>
+        <a href="./business.html">Business</a>
+        <a href="./tickets.html">Tickets</a>
+    </nav>
+    <div id="container">
+        <h1>購票資訊區</h1>
+        <form action="./tickets/tickets.php" method="post">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name">
+            <label for="email">Email</label>
+            <input type="text" name="email">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone">
+            <label for="verification">Verification</label>
+            <input type="text" name="verification">
+            <button type="submit">Submit</button>
+        </form>
+
+        <h1>社群媒體分享資訊區</h1>
+        <div id="social_media">
+            <img src="./media/facebook.png">
+            <img src="./media/twitter.png">
+            <img src="./media/youtube.png">
+        </div>
+    </div>
+    <footer>Copyright © 2024 FIBEX All Rights Reserved</footer>
+</body>
+
+<script src="./tickets/script.js"></script>
+
+</html>
